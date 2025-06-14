@@ -1,0 +1,43 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#2E3A59" stroke-linejoin="round" stroke-linecap="round" font-family="Arial, sans-serif" font-weight="normal">
+  <!-- Corp calculator -->
+  <rect x="30" y="20" width="100" height="120" rx="15" ry="15" fill="#A9C1E8" stroke="#1F2D50" stroke-width="1.5" />
+ 
+  <!-- Ecran verde -->
+  <rect x="40" y="30" width="80" height="30" rx="5" ry="5" fill="#2CA02C" stroke="#1F4D10" stroke-width="1.5" />
+ 
+  <!-- Semne dolar pe ecran, identice, verde aprins, subtiri -->
+  <text x="65" y="48" font-size="16" fill="#7FFF00" font-weight="200" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif">$</text>
+  <text x="80" y="48" font-size="16" fill="#7FFF00" font-weight="200" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif">$</text>
+  <text x="95" y="48" font-size="16" fill="#7FFF00" font-weight="200" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif">$</text>
+ 
+  <!-- Butoane -->
+  <g fill="#4A5F8A" stroke="#3B4B75" stroke-width="0.8">
+    <!-- Prima linie -->
+    <rect x="45" y="65" width="18" height="20" rx="3" ry="3" />
+    <rect x="68" y="65" width="18" height="20" rx="3" ry="3" />
+    <rect x="91" y="65" width="18" height="20" rx="3" ry="3" />
+   
+    <!-- A doua linie -->
+    <rect x="45" y="90" width="18" height="20" rx="3" ry="3" />
+    <rect x="68" y="90" width="18" height="20" rx="3" ry="3" />
+    <rect x="91" y="90" width="18" height="20" rx="3" ry="3" />
+   
+    <!-- A treia linie -->
+    <rect x="45" y="115" width="18" height="20" rx="3" ry="3" />
+    <rect x="68" y="115" width="18" height="20" rx="3" ry="3" />
+    <rect x="91" y="115" width="18" height="20" rx="3" ry="3" />
+  </g>
+ 
+  <!-- Numere pe butoane, centrate, subtiri -->
+  <text x="54" y="75" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">7</text>
+  <text x="77" y="75" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">8</text>
+  <text x="100" y="75" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">9</text>
+ 
+  <text x="54" y="100" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">4</text>
+  <text x="77" y="100" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">5</text>
+  <text x="100" y="100" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">6</text>
+ 
+  <text x="54" y="125" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">1</text>
+  <text x="77" y="125" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">2</text>
+  <text x="100" y="125" font-size="11" fill="#E3E9FA" font-weight="200" text-anchor="middle" dominant-baseline="middle">3</text>
+</svg>

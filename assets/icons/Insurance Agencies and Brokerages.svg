@@ -1,0 +1,49 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" width="320" height="200">
+  <defs>
+    <style>
+      .person { fill: #2980b9; stroke: #1c5980; stroke-width: 1.5; }
+      .dollar { fill: #2ecc71; stroke: #1e8449; stroke-width: 2; font-size: 40px; font-family: Arial, sans-serif; font-weight: bold; }
+      .shield { fill: none; stroke: #2980b9; stroke-width: 2.5; }
+      .contract { fill: #ecf0f1; stroke: #7f8c8d; stroke-width: 1.5; }
+      .line { stroke: #7f8c8d; stroke-width: 1.2; }
+      .signature { stroke: #2c3e50; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+ 
+  <!-- Scut cu bordură albastră și semn dolar centrat -->
+  <g transform="translate(75,20)">
+    <path d="M20,0
+             Q40,0 50,15
+             Q52,55 20,85
+             Q-12,55 -10,15
+             Q0,0 20,0 Z" class="shield"/>
+    <text x="20" y="50" class="dollar" text-anchor="middle">$</text>
+  </g>
+ 
+  <!-- Contract în dreapta sus, mai aproape de om -->
+  <g transform="translate(210,20)">
+    <rect width="50" height="70" rx="4" ry="4" class="contract"/>
+    <line x1="8" y1="15" x2="42" y2="15" class="line"/>
+    <line x1="8" y1="25" x2="42" y2="25" class="line"/>
+    <line x1="8" y1="35" x2="42" y2="35" class="line"/>
+    <path d="M10,55 q10,10 30,-5" class="signature"/>
+  </g>
+ 
+  <!-- Om centrat -->
+  <circle cx="160" cy="60" r="14" class="person"/>
+  <path d="M146,74
+           q-10,2 -12,10
+           v16
+           q0,4 4,6
+           l10,4
+           v40
+           h24
+           v-40
+           l10,-4
+           q4,-2 4,-6
+           v-16
+           q-2,-8 -12,-10
+           z"
+        class="person"/>
+  <line x1="160" y1="110" x2="160" y2="150" stroke="#1c5980" stroke-width="2"/>
+</svg>

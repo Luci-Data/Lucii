@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messages - LuciData AI Company</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a2e;
+      color: #ddd;
+    }
+
+    header {
+      background-color: #002a75;
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #4ea1ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: #121826;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4ea1ff;
+      margin-bottom: 2rem;
+    }
+
+    .message-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .message-category {
+      width: 48%;
+    }
+
+    .message-card {
+      background-color: #1f263d;
+      border-left: 5px solid #4ea1ff;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .message-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 12px rgba(78, 161, 255, 0.5);
+    }
+
+    .message-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .message-card p {
+      margin: 0.2rem 0;
+      color: #ccc;
+    }
+
+    .no-messages {
+      text-align: center;
+      font-size: 1rem;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #22283b;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>LuciData AI</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="messages.html" class="active">Messages</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Inbox</h1>
+    <div class="message-section">
+      <div class="message-category">
+        <h2>Unread Messages</h2>
+        <div id="unread-messages"></div>
+      </div>
+      <div class="message-category">
+        <h2>Read Messages</h2>
+        <div id="read-messages"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LuciData AI Company. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const unreadContainer = document.getElementById("unread-messages");
+    const readContainer = document.getElementById("read-messages");
+
+    const messages = JSON.parse(localStorage.getItem("contactMessages")) || [];
+    const readStatus = JSON.parse(localStorage.getItem("readStatus")) || {};
+
+    function renderMessages() {
+      unreadContainer.innerHTML = '';
+      readContainer.innerHTML = '';
+
+      if (messages.length === 0) {
+        unreadContainer.innerHTML = '<p class="no-messages">No messages submitted.</p>';
+        readContainer.innerHTML = '<p class="no-messages">No messages submitted.</p>';
+        return;
+      }
+
+      messages.forEach((msg, index) => {
+        const card = document.createElement("div");
+        card.classList.add("message-card");
+
+        card.innerHTML = `
+          <h3>${msg.name}</h3>
+          <p><strong>Email:</strong> ${msg.email}</p>
+          <p><strong>Phone:</strong> ${msg.phone || '—'}</p>
+          <p><strong>Message:</strong><br/> ${msg.message}</p>
+        `;
+
+        card.addEventListener("click", () => {
+          readStatus[index] = true;
+          localStorage.setItem("readStatus", JSON.stringify(readStatus));
+          renderMessages();
+        });
+
+        if (readStatus[index]) {
+          readContainer.appendChild(card);
+        } else {
+          unreadContainer.appendChild(card);
+        }
+      });
+    }
+
+    renderMessages();
+    setInterval(renderMessages, 5000);
+  </script>
+</body>
+</html>

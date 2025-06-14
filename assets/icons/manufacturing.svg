@@ -1,0 +1,18 @@
+<svg width="80" height="64" viewBox="0 0 80 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Fabrica stilizata -->
+  <rect x="10" y="30" width="60" height="24" fill="#718CA1" stroke="#22313F" rx="4" ry="4"/>
+ 
+  <!-- Acoperiș tip zigzag (hale industriale) -->
+  <polyline points="10,30 22,14 34,30 46,14 58,30 70,14 70,30" fill="#95A5A6" stroke="#22313F" stroke-width="2"/>
+ 
+  <!-- Coș de fum -->
+  <rect x="60" y="6" width="10" height="18" fill="#566573" stroke="#22313F" rx="2" ry="2"/>
+  <path d="M65 6 C63 2, 67 2, 65 0" stroke="#ABB2B9" stroke-width="2" fill="none"/>
+  <path d="M68 10 C66 5, 70 5, 68 3" stroke="#ABB2B9" stroke-width="2" fill="none"/>
+ 
+  <!-- Ferestre hala -->
+  <rect x="18" y="36" width="8" height="8" fill="#D6DBDF" stroke="#22313F" rx="1" ry="1"/>
+  <rect x="30" y="36" width="8" height="8" fill="#D6DBDF" stroke="#22313F" rx="1" ry="1"/>
+  <rect x="42" y="36" width="8" height="8" fill="#D6DBDF" stroke="#22313F" rx="1" ry="1"/>
+  <rect x="54" y="36" width="8" height="8" fill="#D6DBDF" stroke="#22313F" rx="1" ry="1"/>
+</svg>

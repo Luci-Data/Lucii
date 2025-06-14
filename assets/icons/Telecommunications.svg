@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Turn telecomunicații simplificat -->
+  <rect x="31.33" y="12" width="1.33" height="40" fill="#0D47A1" rx="1" />
+ 
+  <!-- Antene laterale -->
+  <line x1="22" y1="28" x2="42" y2="28" stroke="#1976D2" stroke-width="3" />
+  <line x1="20" y1="36" x2="44" y2="36" stroke="#1976D2" stroke-width="3" />
+  <line x1="18" y1="44" x2="46" y2="44" stroke="#1976D2" stroke-width="3" />
+ 
+  <!-- Semnale wireless subtiri, centru putin mai jos -->
+  <circle cx="32" cy="11" r="4" stroke="#42A5F5" stroke-width="1.5" fill="none" />
+  <circle cx="32" cy="11" r="7" stroke="#90CAF9" stroke-width="1.5" fill="none" />
+  <circle cx="32" cy="11" r="10" stroke="#BBDEFB" stroke-width="1.5" fill="none" />
+ 
+  <!-- Bază turn -->
+  <rect x="26" y="52" width="12" height="8" fill="#0D47A1" rx="2" />
+</svg>

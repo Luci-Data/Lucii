@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy AI Services - Pricing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: auto;
+      min-height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f1115;
+      color: #0099FF;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.15;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 40px 20px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0099FF;
+      text-shadow: 0 0 8px #0099FF;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #0099FF;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 36px;
+    }
+
+    .pricing-card {
+      background: #1a1c22;
+      border-radius: 12px;
+      padding: 25px 20px;
+      border: 1px solid rgba(0, 153, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 153, 255, 0.4);
+    }
+
+    .pricing-card h3 {
+      font-size: 1.4rem;
+      color: #0099FF;
+      margin-bottom: 16px;
+    }
+
+    .pricing-card p {
+      font-size: 1rem;
+      color: #0099FF;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #0099FF;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      display: block;
+      margin: 40px auto 0;
+      background-color: rgba(0, 153, 255, 0.1);
+      color: #0099FF;
+      padding: 12px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border: none;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(0, 153, 255, 0.3);
+    }
+
+    .btn-back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: 2px solid #0099FF;
+      color: #0099FF;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    .btn-back:hover {
+      background-color: #0099FF;
+      color: #0f1115;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="energyCanvas"></canvas>
+
+  <button class="btn-back" onclick="history.back()">← Back</button>
+
+  <div class="container">
+    <header>
+      <h1>AI Services for Energy Industry</h1>
+      <p>Enhance energy management, optimize grids, and accelerate renewable adoption with our AI-powered solutions.</p>
+    </header>
+
+    <section class="pricing-grid">
+      <article class="pricing-card">
+        <h3>AI for Energy Demand & Consumption Forecasting</h3>
+        <p>Predict energy needs accurately to optimize supply and reduce waste.</p>
+        <div class="price">€318,22 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Grid Monitoring & Fault Detection</h3>
+        <p>Real-time monitoring to quickly identify and address grid issues.</p>
+        <div class="price">€345,57 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Renewable Energy Optimization</h3>
+        <p>Maximize efficiency and output from renewable sources.</p>
+        <div class="price">€363,09 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Smart Asset Management & Predictive Maintenance</h3>
+        <p>Proactive maintenance to extend asset life and reduce downtime.</p>
+        <div class="price">€353,99 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Energy Trading & Pricing Optimization</h3>
+        <p>Optimize trading strategies and pricing models using AI insights.</p>
+        <div class="price">€335,48 / month</div>
+      </article>
+    </section>
+
+    <a href="contact.html" class="btn-primary" aria-label="Contact Us to Become a Client">
+      Contact Us to Become a Client
+    </a>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("energyCanvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    resizeCanvas();
+
+    // Emojis related to Energy:
+    const emojis = ['⚡', '🔋', '🌞', '💡', '🔌', '🛢️', '🔥', '⚙️', '🌍'];
+    const fontSize = 20;
+    let columns = Math.floor(canvas.width / fontSize);
+    const drops = new Array(columns).fill(1);
+
+    function drawEnergyMatrix() {
+      ctx.fillStyle = "rgba(15, 17, 21, 0.1)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "rgba(0, 153, 255, 0.6)";
+      ctx.font = fontSize + "px serif";
+
+      for (let i = 0; i < drops.length; i++) {
+        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+        ctx.fillText(emoji, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawEnergyMatrix, 40);
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      columns = Math.floor(canvas.width / fontSize);
+      drops.length = columns;
+      drops.fill(1);
+    });
+  </script>
+</body>
+</html>

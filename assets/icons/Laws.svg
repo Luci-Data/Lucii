@@ -1,0 +1,18 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#3B3B3B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+  <g transform="translate(30 40) scale(0.7) rotate(-30 80 70)">
+    <!-- Cap cilindric stânga -->
+    <rect x="30" y="50" width="35" height="40" rx="15" ry="15" fill="#8B6E4A" stroke="#3B3B3B" />
+   
+    <!-- Corp ciocan (partea de mijloc) -->
+    <rect x="65" y="50" width="55" height="40" fill="#A1855B" stroke="#3B3B3B" />
+   
+    <!-- Cap cilindric dreapta -->
+    <rect x="120" y="50" width="35" height="40" rx="15" ry="15" fill="#8B6E4A" stroke="#3B3B3B" />
+   
+    <!-- Mâner lung și gros, prelungit -->
+    <rect x="85" y="85" width="20" height="90" rx="8" ry="8" fill="#5C4B31" stroke="#3B3B3B" />
+  </g>
+ 
+  <!-- Cerc plat mai mare în stânga jos -->
+  <ellipse cx="45" cy="140" rx="25" ry="8" fill="#8B6E4A" stroke="#3B3B3B" stroke-width="3"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Car body -->
+  <rect x="10" y="24" width="44" height="16" fill="#1F2937" rx="4" ry="4"/>
+  
+  <!-- Car roof -->
+  <polygon points="18,24 46,24 40,14 24,14" fill="#3B82F6"/>
+  
+  <!-- Left wheel -->
+  <circle cx="18" cy="44" r="6" fill="#374151"/>
+  <circle cx="18" cy="44" r="3" fill="#60A5FA"/>
+  
+  <!-- Right wheel -->
+  <circle cx="46" cy="44" r="6" fill="#374151"/>
+  <circle cx="46" cy="44" r="3" fill="#60A5FA"/>
+  
+  <!-- Headlights -->
+  <rect x="8" y="28" width="4" height="6" fill="#FBBF24" rx="1" ry="1"/>
+  <rect x="52" y="28" width="4" height="6" fill="#FBBF24" rx="1" ry="1"/>
+</svg>

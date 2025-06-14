@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="24" width="48" height="32" rx="2" fill="#F2F2F2" stroke="#333" stroke-width="2"/>
+  <rect x="12" y="28" width="10" height="10" fill="#FFCC66" stroke="#333" stroke-width="2"/>
+  <rect x="26" y="28" width="26" height="10" fill="#AED581" stroke="#333" stroke-width="2"/>
+  <line x1="8" y1="24" x2="56" y2="24" stroke="#333" stroke-width="2"/>
+  <path d="M8 24 L16 12 H48 L56 24" fill="#FF7043" stroke="#333" stroke-width="2"/>
+  <rect x="20" y="40" width="8" height="16" fill="#90CAF9" stroke="#333" stroke-width="2"/>
+  <rect x="36" y="40" width="8" height="16" fill="#90CAF9" stroke="#333" stroke-width="2"/>
+  <text x="32" y="22" font-size="6" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">MARKET</text>
+</svg>

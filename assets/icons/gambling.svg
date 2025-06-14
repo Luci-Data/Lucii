@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Zarul 1 - rosu, mutat putin mai spre stanga -->
+  <rect x="8" y="22" width="22" height="22" rx="5" fill="#E53935" stroke="#B71C1C" stroke-width="2"/>
+  <circle cx="13" cy="27" r="2.5" fill="#FFF"/>
+  <circle cx="13" cy="33" r="2.5" fill="#FFF"/>
+  <circle cx="13" cy="39" r="2.5" fill="#FFF"/>
+  <circle cx="23" cy="27" r="2.5" fill="#FFF"/>
+  <circle cx="23" cy="33" r="2.5" fill="#FFF"/>
+  <circle cx="23" cy="39" r="2.5" fill="#FFF"/>
+ 
+  <!-- Zarul 2 - albastru, mutat putin mai spre dreapta -->
+  <rect x="38" y="36" width="22" height="22" rx="4" fill="#3949AB" stroke="#1A237E" stroke-width="2"/>
+  <circle cx="45" cy="43" r="2.5" fill="#FFF"/>
+  <circle cx="52" cy="43" r="2.5" fill="#FFF"/>
+  <circle cx="45" cy="51" r="2.5" fill="#FFF"/>
+  <circle cx="52" cy="51" r="2.5" fill="#FFF"/>
+ 
+  <!-- Cartile de joc cu as de romb foarte puțin mai jos -->
+  <rect x="44" y="8" width="12" height="18" rx="3" fill="#FFF" stroke="#000" stroke-width="1"/>
+  <text x="50" y="14" font-size="7" font-weight="bold" fill="#D32F2F" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">A</text>
+  <!-- Patrat rotit 45° (romb) mic, coborât foarte puțin -->
+  <rect x="48" y="18.4" width="4" height="4" fill="#D32F2F" transform="rotate(45 50 20.4)"/>
+</svg>

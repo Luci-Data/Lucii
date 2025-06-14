@@ -1,0 +1,30 @@
+<svg width="80" height="64" viewBox="0 0 80 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <!-- Farfurie rotundă, bordură dublă și umbră subtilă -->
+  <circle cx="37" cy="32" r="22" fill="#FFF7E6" stroke="#FF6F00" stroke-width="3"/>
+  <circle cx="37" cy="32" r="18" fill="none" stroke="#FFA726" stroke-width="1.5" stroke-dasharray="4 6"/>
+ 
+  <!-- Meniu: pizza stilizată cu felii și toppinguri -->
+  <circle cx="37" cy="32" r="14" fill="#FFD180" stroke="#FFB300" stroke-width="1.8"/>
+  <path d="M37 18 L37 46" stroke="#FF6F00" stroke-width="1.5"/>
+  <path d="M26 25 L48 39" stroke="#FF6F00" stroke-width="1.5"/>
+  <path d="M26 39 L48 25" stroke="#FF6F00" stroke-width="1.5"/>
+ 
+  <!-- Toppinguri rotunde (măsline) -->
+  <circle cx="33" cy="28" r="3" fill="#5D4037"/>
+  <circle cx="41" cy="36" r="3" fill="#5D4037"/>
+  <circle cx="29" cy="36" r="3" fill="#5D4037"/>
+  <circle cx="45" cy="28" r="3" fill="#5D4037"/>
+ 
+  <!-- Cana de cafea, mutată și mai jos -->
+  <rect x="63" y="30" width="13" height="24" rx="6" ry="6" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
+  <ellipse cx="69.5" cy="30" rx="6.5" ry="4" fill="#8D6E63"/>
+ 
+  <!-- Aburi cu 3 urme, mai spatioase intre ele -->
+  <path d="M67 28 C66 25, 68 24, 67 21" stroke="#D7CCC8" stroke-width="1.5" fill="none" />
+  <path d="M71 26 C70 23, 72 22, 71 19" stroke="#D7CCC8" stroke-width="1.5" fill="none" />
+  <path d="M75 28 C74 25, 76 24, 75 21" stroke="#D7CCC8" stroke-width="1.5" fill="none" />
+ 
+  <!-- Toartă cană, mai rotunjită și mai pronunțată -->
+  <path d="M77 34 C81 34, 81 50, 77 50" stroke="#3E2723" stroke-width="2" fill="none" />
+  <path d="M77 35 C80 35, 80 49, 77 49" stroke="#3E2723" stroke-width="1.5" fill="none" />
+</svg>

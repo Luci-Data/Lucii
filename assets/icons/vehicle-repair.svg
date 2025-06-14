@@ -1,0 +1,16 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+  fill="none"
+>
+  <!-- Cheia franceză -->
+  <path
+    d="M10 50 L20 40 L26 46 L40 32 L46 38 L36 48 L50 62 L58 54 L44 40 L50 34 L38 22 L32 28 L26 22 L10 38 Z"
+    stroke="#2563EB"
+    stroke-width="4"
+    fill="#3B82F6"
+    stroke-linejoin="round"
+  />
+</svg>

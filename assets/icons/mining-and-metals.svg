@@ -1,0 +1,84 @@
+<svg
+  width="80"
+  height="80"
+  viewBox="0 0 80 80"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="38" fill="#cce4f7" stroke="#1a3d7c" stroke-width="4" />
+
+  <!-- Pickaxe handle -->
+  <rect
+    x="36"
+    y="18"
+    width="6"
+    height="30"
+    fill="#3b5998"
+    stroke="#1a3d7c"
+    stroke-width="2"
+    rx="1"
+  />
+
+  <!-- Pickaxe head -->
+  <path
+    d="M30 20 L50 12 L54 16 L34 24 Z"
+    fill="#2c4887"
+    stroke="#1a3d7c"
+    stroke-width="2"
+  />
+
+  <!-- Hammer handle -->
+  <rect
+    x="44"
+    y="40"
+    width="6"
+    height="25"
+    fill="#4579b5"
+    stroke="#1a3d7c"
+    stroke-width="2"
+    rx="1"
+    transform="rotate(45 44 40)"
+  />
+
+  <!-- Hammer head -->
+  <rect
+    x="54"
+    y="25"
+    width="12"
+    height="8"
+    fill="#3b5998"
+    stroke="#1a3d7c"
+    stroke-width="2"
+    rx="2"
+    transform="rotate(45 54 25)"
+  />
+
+  <!-- Metal block -->
+  <rect
+    x="20"
+    y="54"
+    width="40"
+    height="15"
+    fill="#7ea8d9"
+    stroke="#2c4887"
+    stroke-width="3"
+    rx="3"
+  />
+  <line
+    x1="20"
+    y1="62"
+    x2="60"
+    y2="62"
+    stroke="#5180c3"
+    stroke-width="2"
+  />
+  <line
+    x1="20"
+    y1="68"
+    x2="60"
+    y2="68"
+    stroke="#5180c3"
+    stroke-width="2"
+  />
+</svg>

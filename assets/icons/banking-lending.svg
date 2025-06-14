@@ -1,0 +1,73 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+  <defs>
+    <style>
+      .bank { fill: #e1e8eb; stroke: #273746; stroke-width: 2; filter: url(#bankShadow); }
+      .roof {
+        fill: url(#roofGradient);
+        stroke: #273746;
+        stroke-width: 2.5;
+        filter: url(#roofShadow);
+      }
+      .column {
+        fill: #fefefe;
+        stroke: #273746;
+        stroke-width: 1.5;
+        filter: url(#colShadow);
+      }
+      .text-bank {
+        font-family: 'Arial Black', Arial, sans-serif;
+        font-size: 26px;  /* reduced size */
+        fill: url(#textGradient);
+        font-weight: bold;
+        text-anchor: middle;
+        filter: url(#textGlow);
+        letter-spacing: 2px;
+      }
+    </style>
+ 
+    <linearGradient id="roofGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a9ba8"/>
+      <stop offset="100%" stop-color="#d7dde1"/>
+    </linearGradient>
+ 
+    <linearGradient id="textGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34495e"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+ 
+    <filter id="roofShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1c2833" flood-opacity="0.4"/>
+    </filter>
+ 
+    <filter id="bankShadow" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#17202a" flood-opacity="0.3"/>
+    </filter>
+ 
+    <filter id="colShadow" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#1c2833" flood-opacity="0.25"/>
+    </filter>
+ 
+    <filter id="textGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#34495e" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+ 
+  <!-- Bank Roof puțin mai îngust păstrând baza fixă -->
+  <polygon points="90,60 200,0 310,60" class="roof"/>
+ 
+  <!-- Bank Base -->
+  <rect x="110" y="60" width="180" height="120" class="bank"/>
+ 
+  <!-- Columns (5, mutate spre dreapta) -->
+  <rect x="130" y="80" width="15" height="90" class="column"/>
+  <rect x="163" y="80" width="15" height="90" class="column"/>
+  <rect x="196" y="80" width="15" height="90" class="column"/>
+  <rect x="229" y="80" width="15" height="90" class="column"/>
+  <rect x="262" y="80" width="15" height="90" class="column"/>
+ 
+  <!-- Bank Base Line -->
+  <rect x="110" y="180" width="180" height="10" fill="#95a5a6"/>
+ 
+  <!-- Text BANK centrat deasupra bazei acoperișului -->
+  <text x="200" y="50" class="text-bank">BANK</text>
+</svg>

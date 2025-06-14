@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Game AI Services - Pricing</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: auto;
+      min-height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f1115;
+      color: #0099FF;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 40px 20px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0099FF;
+      text-shadow: 0 0 12px #0099FF;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #a0aec0;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 36px;
+    }
+
+    .pricing-card {
+      background: #1a1c22;
+      border-radius: 12px;
+      padding: 25px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
+    }
+
+    .pricing-card h3 {
+      font-size: 1.4rem;
+      color: #0099FF;
+      margin-bottom: 16px;
+    }
+
+    .pricing-card p {
+      font-size: 1rem;
+      color: #cbd5e1;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #4dc6ff;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      display: block;
+      margin: 40px auto 0;
+      background-color: #0099FF;
+      color: #0f1115;
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border: none;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .btn-primary:hover {
+      background-color: #007acc;
+    }
+
+    .btn-back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: 2px solid #0099FF;
+      color: #0099FF;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    .btn-back:hover {
+      background-color: #0099FF;
+      color: #0f1115;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+
+  <button class="btn-back" id="backButton">← Back</button>
+
+  <div class="container">
+    <header>
+      <h1>Video Game AI Services</h1>
+      <p>Level up your game development with cutting-edge AI tools for dynamic worlds, smart NPCs and adaptive gameplay. Choose your plan and start winning.</p>
+    </header>
+
+    <section class="pricing-grid">
+      <article class="pricing-card">
+        <h3>AI for Game Development and Level Design</h3>
+        <p>Create intelligent NPCs with realistic behavior, learning and adaptive strategies in real time.</p>
+        <div class="price">€2,797.50 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Player Behavior Analytics and Personalization</h3>
+        <p>Generate levels, quests, and items procedurally using advanced AI algorithms for endless replayability.</p>
+        <div class="price">€2,331.00 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for In-Game Economy Management</h3>
+        <p>Build immersive dialogues and dynamic conversations powered by NLP and TTS engines.</p>
+        <div class="price">€1,866.00 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Marketing and Audience Targeting</h3>
+        <p>Optimize game mechanics and difficulty with real-time feedback loops and predictive analytics.</p>
+        <div class="price">€2,378.00 / month</div>
+      </article>
+
+      <article class="pricing-card">
+        <h3>AI for Community Management and Engagement</h3>
+        <p>Instantly generate characters, environments and VFX to speed up production pipelines.</p>
+        <div class="price">€1,911.00 / month</div>
+      </article>
+    </section>
+
+    <a href="contact.html" class="btn-primary">Contact Us</a>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("matrixCanvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    resizeCanvas();
+
+    const chars = "▲●■★☯☢☣♜";
+    const fontSize = 16;
+    let columns = Math.floor(canvas.width / fontSize);
+    const drops = new Array(columns).fill(1);
+
+    function drawMatrix() {
+      ctx.fillStyle = "rgba(15, 17, 21, 0.07)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#0099FF";
+      ctx.font = fontSize + "px monospace";
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawMatrix, 40);
+
+    window.addEventListener("resize", () => {
+      resizeCanvas();
+      columns = Math.floor(canvas.width / fontSize);
+      drops.length = columns;
+      drops.fill(1);
+    });
+
+    // Back button to go to services.html
+    document.getElementById("backButton").addEventListener("click", function () {
+      window.location.href = "services.html";
+    });
+  </script>
+</body>
+</html>

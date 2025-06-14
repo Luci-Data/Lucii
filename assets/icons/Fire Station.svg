@@ -1,0 +1,35 @@
+<svg width="200" height="160" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Clădire stație pompieri -->
+  <rect x="30" y="60" width="140" height="80" rx="12" fill="#D33F3F" stroke="#8B2323" stroke-width="3"/>
+ 
+  <!-- Acoperiș -->
+  <path d="M25 60 L100 20 L175 60 Z" fill="#B02A2A" stroke="#8B2323" stroke-width="3"/>
+ 
+  <!-- Ușile garajelor -->
+  <rect x="45" y="100" width="40" height="40" rx="5" fill="#F7D9D9" stroke="#8B2323" stroke-width="2"/>
+  <rect x="115" y="100" width="40" height="40" rx="5" fill="#F7D9D9" stroke="#8B2323" stroke-width="2"/>
+ 
+  <!-- Mașina pompieri mutată mai spre stânga -->
+  <rect x="-5" y="110" width="90" height="30" rx="6" fill="#4477BB" stroke="#2C4D75" stroke-width="2"/>
+  <rect x="70" y="95" width="40" height="45" rx="5" fill="#6A99D9" stroke="#2C4D75" stroke-width="2"/>
+ 
+  <!-- Geamurile mașinii -->
+  <rect x="75" y="100" width="12" height="15" rx="2" fill="#C6D9F1" stroke="#2C4D75" stroke-width="1" />
+  <rect x="92" y="100" width="12" height="15" rx="2" fill="#C6D9F1" stroke="#2C4D75" stroke-width="1" />
+ 
+  <!-- Roțile -->
+  <circle cx="10" cy="140" r="10" fill="#2C4D75" />
+  <circle cx="65" cy="140" r="10" fill="#2C4D75" />
+ 
+  <!-- Scară pe mașină -->
+  <line x1="0" y1="105" x2="75" y2="105" stroke="#AEC9E9" stroke-width="2" />
+  <line x1="5" y1="102" x2="5" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+  <line x1="15" y1="102" x2="15" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+  <line x1="25" y1="102" x2="25" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+  <line x1="35" y1="102" x2="35" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+  <line x1="45" y1="102" x2="45" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+  <line x1="55" y1="102" x2="55" y2="108" stroke="#AEC9E9" stroke-width="1.5" />
+ 
+  <!-- Linie sol -->
+  <line x1="20" y1="150" x2="180" y2="150" stroke="#2C4D75" stroke-width="1.5" />
+</svg>

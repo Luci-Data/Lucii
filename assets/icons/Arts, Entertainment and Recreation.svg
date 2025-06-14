@@ -1,0 +1,56 @@
+<svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" width="220" height="140">
+  <defs>
+    <style>
+      .screen-frame {
+        fill: #2c3e50;
+        stroke: #1b2838;
+        stroke-width: 3;
+        rx: 10;
+        ry: 10;
+      }
+      .screen-surface {
+        fill: linear-gradient(90deg, #000000, #111111, #000000);
+        filter: url(#glow);
+        rx: 6;
+        ry: 6;
+      }
+      .movie-frame {
+        fill: #222;
+        stroke: #555;
+        stroke-width: 1;
+        rx: 3;
+        ry: 3;
+      }
+      .play-button {
+        fill: #5dade2; /* albastru ușor plăcut */
+        cursor: pointer;
+        filter: drop-shadow(0 0 1px #3a7bd5);
+      }
+      .play-triangle {
+        fill: white;
+      }
+      /* Glowing effect */
+      .glow {
+        filter: drop-shadow(0 0 6px #2980b9);
+      }
+    </style>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB" >
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#2980b9" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+ 
+  <g transform="translate(15, 10)">
+    <!-- Screen frame tilted to simulate angle -->
+    <rect x="40" y="30" width="140" height="80" class="screen-frame" transform="skewX(-10)"/>
+ 
+    <!-- Screen surface -->
+    <rect x="47" y="37" width="126" height="66" fill="#000" rx="6" ry="6" transform="skewX(-10)" filter="url(#glow)"/>
+ 
+    <!-- Movie frame (moved up by 10 units) -->
+    <g transform="translate(0,-10)">
+      <rect x="70" y="60" width="80" height="40" class="movie-frame" transform="skewX(-10)"/>
+      <circle cx="110" cy="80" r="12" class="play-button" transform="skewX(-10)" />
+      <polygon points="104,73 104,87 118,80" class="play-triangle" transform="skewX(-10)" />
+    </g>
+  </g>
+</svg>

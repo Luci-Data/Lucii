@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - LuciData AI Company</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>LuciData AI</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="#" id="logout-link">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Welcome back, Valentin</h1>
+        <button class="btn-primary">New Report</button>
+      </header>
+
+      <section class="card-grid">
+        <div class="card">
+          <h3>Monthly Revenue</h3>
+          <p>$0 <span style="color:#38bdf8; font-weight: 700;">+0%</span> from last month</p>
+        </div>
+
+        <div class="card">
+          <h3>Active Users</h3>
+          <p>0 users <span style="color:#34d399; font-weight: 700;">+0%</span> since last week</p>
+        </div>
+
+        <div class="card">
+          <h3>Pending Tasks</h3>
+          <p>0 tasks to complete</p>
+        </div>
+
+        <div class="card">
+          <h3>System Status</h3>
+          <p style="color:#f87171; font-weight: 700;">0 issues detected</p>
+        </div>
+      </section>
+
+      <section style="margin-top: 40px;">
+        <h2 style="color:#38bdf8; margin-bottom: 15px;">Recent Activity</h2>
+        <ul style="list-style:none; padding-left: 0; color:#cbd5e1;">
+          <li>• AI model training completed successfully</li>
+          <li>• New user registered: Panaghiedan@gmail.com</li>
+          <li>• System maintenance scheduled for Sunday</li>
+          <li>• Automated report generated</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // La click pe logout, redirecționează către pagina principală
+    document.getElementById('logout-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

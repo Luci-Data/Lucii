@@ -1,0 +1,20 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Clădire agenție -->
+  <rect x="45" y="55" width="70" height="70" fill="#4A7DD9" rx="12" ry="12" />
+ 
+  <!-- Acoperiș -->
+  <path d="M45 55 L80 25 L115 55 Z" fill="#3566C1" />
+ 
+  <!-- Ușă mare la intrare -->
+  <rect x="75" y="95" width="18" height="30" fill="#AFCDFD" rx="4" ry="4" />
+  <rect x="84" y="95" width="3" height="30" fill="#7A9DD4" rx="1" />
+ 
+  <!-- Geamuri mari de birou (fațadă) -->
+  <rect x="52" y="65" width="18" height="20" fill="#AFCDFD" rx="4" ry="4" />
+  <rect x="90" y="65" width="18" height="20" fill="#AFCDFD" rx="4" ry="4" />
+ 
+  <!-- Semn pancartă "For Sale" -->
+  <rect x="20" y="120" width="45" height="30" fill="#3566C1" rx="8" ry="8" />
+  <text x="42.5" y="143" fill="#D0E6F8" font-size="16" font-family="Arial" font-weight="700" letter-spacing="1" text-anchor="middle">SALE</text>
+  <rect x="40" y="150" width="6" height="12" fill="#3566C1" />
+</svg>
